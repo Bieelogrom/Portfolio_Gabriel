@@ -19,10 +19,15 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">@Gabriel.fav</h1>
+            <h1 className="text-xl font-burtons dark:text-white">
+              @Gabriel.fav
+            </h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white" />
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="cursor-pointer text-2xl dark:text-white"
+                />
               </li>
               <li>
                 <a
@@ -49,9 +54,15 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillInstagram />
-            <AiFillLinkedin />
-            <AiFillGithub />
+            <a href="https://www.instagram.com/gabriel.fav/" target="_black">
+              <AiFillInstagram className="dark:text-white" />
+            </a>
+            <a href="https://www.linkedin.com/in/gabrielfav/" target="_black">
+              <AiFillLinkedin className="dark:text-white" />
+            </a>
+            <a href="https://github.com/Bieelogrom" target="_black">
+              <AiFillGithub className="dark:text-white" />
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={eu} layout="fill" objectFit="cover" />
@@ -59,7 +70,9 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Projetos anteriores</h3>
+            <h3 className="text-3xl py-1 dark:text-white">
+              Projetos anteriores
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Olá, sou Gabriel Ferreira Amorim, residente em São Paulo, com 19
               anos de idade, imerso no mundo da tecnologia. Iniciei minha
