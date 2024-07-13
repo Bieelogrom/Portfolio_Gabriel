@@ -10,10 +10,16 @@ import codificador from "../../public/Codificador.jpeg";
 import cinemark from "../../public/Cinemark.png";
 import mapa from "../../public/Mapa.jpeg";
 import conectavel from "../../public/Conectavel.jpeg";
+// import curriculo from "../../public/dev.pdf";
 import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const enviarParaProjeto = () => {
+    location.href = "https://github.com/Bieelogrom"
+  }
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
@@ -32,7 +38,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  href="/Dev.pdf" download
                 >
                   Currículo
                 </a>
@@ -148,40 +154,44 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1" onClick={enviarParaProjeto}>
               <Image
                 src={codificador}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
+                title="Projeto de Aprendizado"
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1" onClick={enviarParaProjeto}>
               <Image
                 src={cinemark}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
+                title="Projeto de Aprendizado"
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1" onClick={enviarParaProjeto}>
               <Image
                 src={mapa}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
+                title="Mapa de Carreira"
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1" onClick={enviarParaProjeto}>
               <Image
                 src={conectavel}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
+                title="Conectável"
               />
             </div>
           </div>
