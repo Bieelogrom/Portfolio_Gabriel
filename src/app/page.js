@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
+import { IoLogoJavascript, IoLogoPython  } from "react-icons/io5";
+import { DiMysql } from "react-icons/di";
+import { FaJava } from "react-icons/fa6";
 import eu from "../../public/Eu.png";
 import design from "../../public/design.png";
 import code from "../../public/code.png";
@@ -12,8 +15,11 @@ import mapa from "../../public/Mapa.jpeg";
 import conectavel from "../../public/Conectavel.jpeg";
 // import curriculo from "../../public/dev.pdf";
 import { useState } from "react";
+import { IconContext } from "react-icons";
 
 export default function Home() {
+  const TAMANHO_ICONES = 12
+
   const [darkMode, setDarkMode] = useState(false);
 
   const enviarParaProjeto = () => {
@@ -86,14 +92,13 @@ export default function Home() {
               <span className="text-teal-500">
                 técnico de desenvolvimento de sistemas
               </span>
-              , e atualmente estou cursando desenvolvimento fullstack Java no
-              Instituto PROA.{" "}
+              , e atualmente estou cursando Análise e Desenvolvimento de Sistemas na instituição
+              Fatec Zona Leste.{" "}
               <span className="text-teal-500">
-                Minha paixão reside no desenvolvimento back-end e na gestão de
-                bancos de dados
+                Minha paixão reside no desenvolvimento de software e na tecnologia em geral
               </span>
               , reconhecendo a importância dessas áreas no cerne da inovação
-              tecnológica.
+              da sociedade.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Estou constantemente em busca de aprimoramento e desafios que me
@@ -102,35 +107,23 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10 justify-center">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <div className="w-auto flex justify-center">
-                <Image src={design} width={100} height={100} />
-              </div>
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Básico em Prototipação
-              </h3>
-              <p>Criando designs elegantes adequados à sua teoria de design.</p>
-              <h4 className="py-4 text-teal-600">As ferramentas que utilizo</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Photoshop</p>
-            </div>
-
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow hover:shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <div className="w-auto flex justify-center">
                 <Image src={code} width={100} height={100} />
               </div>
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Linguagens e Frameworks
+                Linguagens, Ferramentas e Frameworks
               </h3>
               <p>
                 Desenvolvendo aplicações com o que há de mais recente no
                 mercado.
               </p>
-              <h4 className="py-4 text-teal-600">As ferramentas que utilizo</h4>
-              <p className="text-gray-800 py-1">Javascript</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">Java</p>
-              <p className="text-gray-800 py-1">Spring boot</p>
+              <div className="my-6 flex justify-center gap-1 text-teal-500">
+                <IoLogoJavascript size={32}/>
+                <FaJava size={32}/>
+                <IoLogoPython  size={32}/>
+                <DiMysql  size={32}/>
+              </div>
             </div>
           </div>
         </section>
