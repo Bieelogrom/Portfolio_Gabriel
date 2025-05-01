@@ -65,7 +65,7 @@ export default function Home() {
               wrapper="h2"
               cursor={true}
               repeat={Infinity}
-              className={"text-2xl"}
+              className={"text-2xl dark:text-white"}
             >
 
             </TypeAnimation>
