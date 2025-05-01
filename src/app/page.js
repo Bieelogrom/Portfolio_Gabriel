@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
-import { IoLogoJavascript, IoLogoPython  } from "react-icons/io5";
+import { IoLogoJavascript, IoLogoPython } from "react-icons/io5";
 import { DiMysql } from "react-icons/di";
 import { FaJava } from "react-icons/fa6";
 import eu from "../../public/Eu.png";
@@ -19,13 +19,13 @@ import { IconContext } from "react-icons";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
-  const TAMANHO_ICONES = 12
+  const TAMANHO_ICONES = 12;
 
   const [darkMode, setDarkMode] = useState(false);
 
   const enviarParaProjeto = () => {
-    location.href = "https://github.com/Bieelogrom"
-  }
+    location.href = "https://github.com/Bieelogrom";
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -45,7 +45,8 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="/Dev.pdf" download
+                  href="/Dev.pdf"
+                  download
                 >
                   Currículo
                 </a>
@@ -53,24 +54,27 @@ export default function Home() {
             </ul>
           </nav>
           <section className="text-center">
-            <TypeAnimation 
-              sequence={['Por que deveriam me contratar?',1000,
-                'O que me torna diferente?', 1000,
-                'O que me motiva?', 1000,
-                'O que me faz feliz?', 1000,
+            <TypeAnimation
+              sequence={[
+                "Por que deveriam me contratar?",
+                1000,
+                "O que me torna diferente?",
+                1000,
+                "O que me motiva?",
+                1000,
+                "O que me faz feliz?",
+                1000,
                 () => {
-                  console.log('Teste!');
+                  console.log("Teste!");
                 },
               ]}
               wrapper="h2"
               cursor={true}
               repeat={Infinity}
               className={"text-2xl dark:text-white"}
-            >
-
-            </TypeAnimation>
-            <div>
-
+            ></TypeAnimation>
+            <div className="flex justify-center p-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rgCSgNakvlo?si=mFmf2yo4YLbDnLx9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </section>
           <div className="text-center p-10">
@@ -78,7 +82,7 @@ export default function Home() {
               Gabriel Ferreira Amorim
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              Desenvolvedor Fullstack.
+              Estudante de Análise e Desenvolvimento de Sistemas
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
               Desenvolvedor empenhado em construir o software de melhor
@@ -104,28 +108,44 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">
-              Sobre Mim
-            </h3>
+            <h3 className="text-3xl py-1 dark:text-white">Sobre Mim</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Olá, sou Gabriel Ferreira Amorim, residente em São Paulo, com 19
-              anos de idade, imerso no mundo da tecnologia. Iniciei minha
-              jornada educacional na ETEC de Guaianazes, onde me formei em{" "}
-              <span className="text-teal-500">
-                técnico de desenvolvimento de sistemas
-              </span>
-              , e atualmente estou cursando Análise e Desenvolvimento de Sistemas na instituição
-              Fatec Zona Leste.{" "}
-              <span className="text-teal-500">
-                Minha paixão reside no desenvolvimento de software e na tecnologia em geral
-              </span>
-              , reconhecendo a importância dessas áreas no cerne da inovação
-              da sociedade.
+              Olá! Sou Gabriel Ferreira Amorim, tenho 20 anos e moro em{" "}
+              <a
+                className="text-teal-500 underline"
+                href="https://pt.wikipedia.org/wiki/S%C3%A3o_Mateus_(distrito_de_S%C3%A3o_Paulo)"
+              >
+                São Mateus
+              </a>
+              , na Zona Leste de São Paulo. Atualmente curso o 2º semestre de
+              Análise e Desenvolvimento de Sistemas na,{" "}
+              <a
+                className="text-teal-500 underline"
+                href="https://www.cps.sp.gov.br/fatecs/fatec-zona-leste/"
+              >
+                Fatec Zona Leste
+              </a>
+              . Minha trajetória começou com o técnico em Marketing na{" "}
+              <a
+                className="text-teal-500 underline"
+                href="https://www.cps.sp.gov.br/etecs/etec-de-sapopemba-sapopemba/"
+              >
+                ETEC Sapopemba
+              </a>
+              , depois segui para Desenvolvimento de Sistemas na{" "}
+              <a
+                className="text-teal-500 underline"
+                href="https://www.cps.sp.gov.br/etecs/etec-de-guaianazes-guaianazes/"
+              >
+              ETEC Guaianazes
+              </a>{" "}
+              e me aprofundei em Fullstack Java no {" "}
+              <a className="text-teal-500 underline" href="https://www.sp.senac.br/senac-lapa-tito">
+              Senac Lapa Tito.
+              </a>
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Estou constantemente em busca de aprimoramento e desafios que me
-              permitam expandir meus horizontes neste fascinante universo
-              tecnológico.
+            Já atuei como aprendiz no setor administrativo. Iniciei tirando dúvidas nos guichês de terminais de ônibus, mas fui gradualmente passando para a zeladoria, onde fazia controle do estoque e atendimento aos postos. Aquela experiência me ensinou bastante sobre organização, resolubilidade e tratamento com diferentes profis e pessoas.
             </p>
           </div>
           <div className="lg:flex gap-10 justify-center">
@@ -141,10 +161,10 @@ export default function Home() {
                 mercado.
               </p>
               <div className="my-6 flex justify-center gap-1 text-teal-500">
-                <IoLogoJavascript size={32}/>
-                <FaJava size={32}/>
-                <IoLogoPython  size={32}/>
-                <DiMysql  size={32}/>
+                <IoLogoJavascript size={32} />
+                <FaJava size={32} />
+                <IoLogoPython size={32} />
+                <DiMysql size={32} />
               </div>
             </div>
           </div>
@@ -169,7 +189,10 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50" onClick={enviarParaProjeto}>
+            <div
+              className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50"
+              onClick={enviarParaProjeto}
+            >
               <Image
                 src={codificador}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -179,7 +202,10 @@ export default function Home() {
                 title="Projeto de Aprendizado"
               />
             </div>
-            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50" onClick={enviarParaProjeto}>
+            <div
+              className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50"
+              onClick={enviarParaProjeto}
+            >
               <Image
                 src={cinemark}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -189,7 +215,10 @@ export default function Home() {
                 title="Projeto de Aprendizado"
               />
             </div>
-            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50" onClick={enviarParaProjeto}>
+            <div
+              className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50"
+              onClick={enviarParaProjeto}
+            >
               <Image
                 src={mapa}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -199,7 +228,10 @@ export default function Home() {
                 title="Mapa de Carreira"
               />
             </div>
-            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50" onClick={enviarParaProjeto}>
+            <div
+              className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50"
+              onClick={enviarParaProjeto}
+            >
               <Image
                 src={conectavel}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
