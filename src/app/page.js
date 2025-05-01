@@ -105,7 +105,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">
-              Projetos anteriores
+              Sobre Mim
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Olá, sou Gabriel Ferreira Amorim, residente em São Paulo, com 19
@@ -169,7 +169,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-4" onClick={enviarParaProjeto}>
+            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50" onClick={enviarParaProjeto}>
               <Image
                 src={codificador}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -179,7 +179,7 @@ export default function Home() {
                 title="Projeto de Aprendizado"
               />
             </div>
-            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-4" onClick={enviarParaProjeto}>
+            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50" onClick={enviarParaProjeto}>
               <Image
                 src={cinemark}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -189,7 +189,7 @@ export default function Home() {
                 title="Projeto de Aprendizado"
               />
             </div>
-            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-4" onClick={enviarParaProjeto}>
+            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50" onClick={enviarParaProjeto}>
               <Image
                 src={mapa}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -199,7 +199,7 @@ export default function Home() {
                 title="Mapa de Carreira"
               />
             </div>
-            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-4" onClick={enviarParaProjeto}>
+            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50" onClick={enviarParaProjeto}>
               <Image
                 src={conectavel}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
