@@ -51,6 +51,12 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <section className="text-center">
+            <h2 className="text-2xl">Por que deveriam me contratar?</h2>
+            <div>
+
+            </div>
+          </section>
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-300">
               Gabriel Ferreira Amorim
@@ -147,7 +153,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1" onClick={enviarParaProjeto}>
+            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-4" onClick={enviarParaProjeto}>
               <Image
                 src={codificador}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -157,7 +163,7 @@ export default function Home() {
                 title="Projeto de Aprendizado"
               />
             </div>
-            <div className="basis-1/3 flex-1" onClick={enviarParaProjeto}>
+            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-4" onClick={enviarParaProjeto}>
               <Image
                 src={cinemark}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -167,7 +173,7 @@ export default function Home() {
                 title="Projeto de Aprendizado"
               />
             </div>
-            <div className="basis-1/3 flex-1" onClick={enviarParaProjeto}>
+            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-4" onClick={enviarParaProjeto}>
               <Image
                 src={mapa}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -177,7 +183,7 @@ export default function Home() {
                 title="Mapa de Carreira"
               />
             </div>
-            <div className="basis-1/3 flex-1" onClick={enviarParaProjeto}>
+            <div className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-4" onClick={enviarParaProjeto}>
               <Image
                 src={conectavel}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
