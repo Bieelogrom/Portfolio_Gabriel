@@ -16,6 +16,7 @@ import conectavel from "../../public/Conectavel.jpeg";
 // import curriculo from "../../public/dev.pdf";
 import { useState } from "react";
 import { IconContext } from "react-icons";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   const TAMANHO_ICONES = 12
@@ -52,7 +53,22 @@ export default function Home() {
             </ul>
           </nav>
           <section className="text-center">
-            <h2 className="text-2xl">Por que deveriam me contratar?</h2>
+            <TypeAnimation 
+              sequence={['Por que deveriam me contratar?',1000,
+                'O que me torna diferente?', 1000,
+                'O que me motiva?', 1000,
+                'O que me faz feliz?', 1000,
+                () => {
+                  console.log('Teste!');
+                },
+              ]}
+              wrapper="h2"
+              cursor={true}
+              repeat={Infinity}
+              className={"text-2xl"}
+            >
+
+            </TypeAnimation>
             <div>
 
             </div>
