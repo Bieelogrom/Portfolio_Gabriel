@@ -23,9 +23,6 @@ export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  const enviarParaProjeto = () => {
-    location.href = "https://github.com/Bieelogrom";
-  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -114,6 +111,7 @@ export default function Home() {
               <a
                 className="text-teal-500 underline"
                 href="https://pt.wikipedia.org/wiki/S%C3%A3o_Mateus_(distrito_de_S%C3%A3o_Paulo)"
+                target="_black"
               >
                 São Mateus
               </a>
@@ -122,6 +120,7 @@ export default function Home() {
               <a
                 className="text-teal-500 underline"
                 href="https://www.cps.sp.gov.br/fatecs/fatec-zona-leste/"
+                target="_black"
               >
                 Fatec Zona Leste
               </a>
@@ -129,6 +128,7 @@ export default function Home() {
               <a
                 className="text-teal-500 underline"
                 href="https://www.cps.sp.gov.br/etecs/etec-de-sapopemba-sapopemba/"
+                target="_black"
               >
                 ETEC Sapopemba
               </a>
@@ -136,11 +136,12 @@ export default function Home() {
               <a
                 className="text-teal-500 underline"
                 href="https://www.cps.sp.gov.br/etecs/etec-de-guaianazes-guaianazes/"
+                target="_black"
               >
               ETEC Guaianazes
               </a>{" "}
               e me aprofundei em Fullstack Java no {" "}
-              <a className="text-teal-500 underline" href="https://www.sp.senac.br/senac-lapa-tito">
+              <a className="text-teal-500 underline" target="_black" href="https://www.sp.senac.br/senac-lapa-tito">
               Senac Lapa Tito.
               </a>
             </p>
@@ -191,8 +192,8 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div
               className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50"
-              onClick={enviarParaProjeto}
             >
+              <a href="https://github.com/Bieelogrom" target="_black">
               <Image
                 src={codificador}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -201,11 +202,12 @@ export default function Home() {
                 layout="responsive"
                 title="Projeto de Aprendizado"
               />
+              </a>
             </div>
             <div
               className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50"
-              onClick={enviarParaProjeto}
             >
+              <a href="https://github.com/Bieelogrom" target="_black">
               <Image
                 src={cinemark}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -214,11 +216,12 @@ export default function Home() {
                 layout="responsive"
                 title="Projeto de Aprendizado"
               />
+              </a>
             </div>
             <div
               className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50"
-              onClick={enviarParaProjeto}
             >
+              <a href="https://bieelogrom.github.io/MapaDeCarreira/" target="_black">
               <Image
                 src={mapa}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -227,11 +230,12 @@ export default function Home() {
                 layout="responsive"
                 title="Mapa de Carreira"
               />
+               </a>
             </div>
             <div
               className="basis-1/3 flex-1 border-4 border-stone-700 rounded-md p-2 dark:border-stone-50"
-              onClick={enviarParaProjeto}
             >
+              <a href="https://beacons.ai/conectavel" target="_black">
               <Image
                 src={conectavel}
                 className="rounded-lg object-cover hover:opacity-50 transition ease-in-out duration-500"
@@ -240,6 +244,7 @@ export default function Home() {
                 layout="responsive"
                 title="Conectável"
               />
+              </a>
             </div>
           </div>
         </section>
