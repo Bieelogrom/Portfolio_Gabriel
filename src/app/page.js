@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslation } from 'react-i18next';
+import '../i18n'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { IoLogoJavascript, IoLogoPython } from "react-icons/io5";
@@ -24,7 +26,7 @@ export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
 
-
+  const { t } = useTranslation()
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
@@ -40,7 +42,7 @@ export default function Home() {
                   className="cursor-pointer text-2xl dark:text-white"
                 />
               </li>
-              <li>
+              <li className="flex">
                 <a
                   className="bg-gradient-to-r from-red-500 to-red-500 text-white px-4 py-2 rounded-md ml-8"
                   href="/Dev.pdf"
@@ -80,7 +82,7 @@ export default function Home() {
               Gabriel Ferreira Amorim
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              Estudante de Análise e Desenvolvimento de Sistemas
+              {t("Eu.Curso")}
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
               Desenvolvedor empenhado em construir o software de melhor
