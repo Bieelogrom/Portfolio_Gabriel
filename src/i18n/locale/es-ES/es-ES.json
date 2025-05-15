@@ -1,7 +1,30 @@
 {
-    "translation":{
-        "Eu":{
-            "Curso": "Estudiante de Análisis y Desarrollo de Sistemas"
-        }
+  "translation": {
+    "Eu": {
+      "Curso": "Estudiante de Análisis y Desarrollo de Sistemas",
+      "Tx1": "Desarrollador comprometido con la creación de software de la más alta calidad. Tengo facilidad para aprender rápidamente nuevas tecnologías y conceptos, lo que me permite adaptarme eficientemente a diferentes entornos laborales y proyectos.",
+      "Sobre_Mim": "Sobre Mí",
+      "Tx2": "¡Hola! Soy Gabriel Ferreira Amorim, tengo 20 años y vivo en",
+      "Tx21": "la Zona Este de São Paulo. Actualmente curso el segundo semestre de Análisis y Desarrollo de Sistemas en la",
+      "Tx22": ". Mi trayectoria comenzó con un curso técnico en Marketing en la ",
+      "Tx23": ", luego seguí con Desarrollo de Sistemas en la ",
+      "Tx25": " y me especialicé en Fullstack Java en el ",
+      "Tx26": " Ya trabajé como aprendiz en el área administrativa. Comencé resolviendo dudas en los mostradores de las terminales de autobuses, y poco a poco pasé al área de mantenimiento, donde me encargaba del control de inventario y de la atención en los puestos. Esa experiencia me enseñó mucho sobre organización, capacidad de resolución y trato con diferentes profesionales y personas.",
+      "Langs": "Lenguajes, Herramientas y Frameworks",
+      "Tx3": "Desarrollando aplicaciones con lo más reciente del mercado.",
+      "Portfolio": "Portafolio",
+      "Tx4": "A lo largo de mi trayectoria, he participado en",
+      "Tx41": " varios proyectos",
+      "Tx42": " que ejemplifican mis habilidades y mi compromiso con la excelencia. Cada proyecto representa una",
+      "Tx43": " oportunidad para aplicar mis conocimientos",
+      "Tx44": " y para aprender algo nuevo, siempre con el objetivo de superar las expectativas de los clientes y usuarios.",
+      "Tx45": " Siempre busco aplicar al máximo todo lo que he aprendido en mis proyectos."
+    },
+    "PQEU": {
+      "Tx1": "¿Por qué deberían contratarme?",
+      "Tx2": "¿Qué me hace diferente?",
+      "Tx3": "¿Qué me motiva?",
+      "Tx4": "¿Cuál es mi objetivo?"
     }
+  }
 }

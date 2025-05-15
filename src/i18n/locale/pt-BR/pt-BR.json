@@ -1,7 +1,29 @@
 {
     "translation":{
         "Eu":{
-            "Curso": "Estudante de Análise e Desenvolvimento de Sistemas"
+            "Curso": "Estudante de Análise e Desenvolvimento de Sistemas",
+            "Tx1": "Desenvolvedor empenhado em construir o software de melhor qualidade. Tenho facilidade em aprender rapidamente novas tecnologias e conceitos, o que me permite adaptar-me eficientemente a diferentes ambientes de trabalho e projetos.",
+            "Sobre_Mim": "Sobre Mim",
+            "Tx2": "Olá! Sou Gabriel Ferreira Amorim, tenho 20 anos e moro em",
+            "Tx21": "na Zona Leste de São Paulo. Atualmente curso o 2º semestre de Análise e Desenvolvimento de Sistemas na,",
+            "Tx22":". Minha trajetória começou com o técnico em Marketing na ",
+            "Tx23":", depois segui para Desenvolvimento de Sistemas na ",
+            "Tx25":" e me aprofundei em Fullstack Java no ",
+            "Tx26":" Já atuei como aprendiz no setor administrativo. Iniciei tirando dúvidas nos guichês de terminais de ônibus, mas fui gradualmente passando para a zeladoria, onde fazia controle do estoque e atendimento aos postos. Aquela experiência me ensinou bastante sobre organização, resolubilidade e tratamento com diferentes profissionais e pessoas.",
+            "Langs": "Linguagens, Ferramentas e Frameworks",
+            "Tx3": "Desenvolvendo aplicações com o que há de mais recente no mercado.",
+            "Portfolio": "Portfolio",
+            "Tx4": "Ao longo da minha carreira, participei de",
+            "Tx41":" diversos projetos","Tx42":" que exemplificam minhas habilidades e meu compromisso com a excelência. Cada projeto é uma",
+            "Tx43":" oportunidade de aplicar meus conhecimentos",
+            "Tx44":" e de aprender algo novo, sempre com o objetivo de superar as expectativas dos clientes e usuários.",
+            "Tx45":" Eu busco sempre aplicar o máximo de tudo que aprendi em meus projetos."
+        },
+        "PQEU":{
+            "Tx1":"Por que deveriam me contratar?",
+            "Tx2":"O que me torna diferente?",
+            "Tx3":"O que me motiva?",
+            "Tx4":"Qual é meu objetivo?"
         }
     }
 }

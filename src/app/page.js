@@ -10,7 +10,6 @@ import { DiMysql } from "react-icons/di";
 import { FaJava } from "react-icons/fa6";
 import { RiFileExcel2Fill } from "react-icons/ri";
 import eu from "../../public/Eu.png";
-import design from "../../public/design.png";
 import code from "../../public/Code2.png";
 import codificador from "../../public/Codificador.jpeg";
 import cinemark from "../../public/Cinemark.png";
@@ -19,12 +18,26 @@ import conectavel from "../../public/Conectavel.jpeg";
 // import curriculo from "../../public/dev.pdf";
 import { useState } from "react";
 import { IconContext } from "react-icons";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 import { TypeAnimation } from "react-type-animation";
+import i18n from 'i18next';
 
 export default function Home() {
   const TAMANHO_ICONES = 12;
 
   const [darkMode, setDarkMode] = useState(false);
+
+  const [language, setLanguage] = useState(i18n.language);
+
+  const handleChange = (event) => {
+    const newValue = event.target.value;
+    i18n.changeLanguage(newValue);
+    setLanguage(newValue); 
+    console.log("Idioma alterado para:", newValue);
+  };
 
   const { t } = useTranslation()
   return (
@@ -42,7 +55,7 @@ export default function Home() {
                   className="cursor-pointer text-2xl dark:text-white"
                 />
               </li>
-              <li className="flex">
+              <li className="flex gap-2">
                 <a
                   className="bg-gradient-to-r from-red-500 to-red-500 text-white px-4 py-2 rounded-md ml-8"
                   href="/Dev.pdf"
@@ -50,23 +63,40 @@ export default function Home() {
                 >
                   Currículo
                 </a>
+                <FormControl sx={{ minWidth: 120,  background: "linear-gradient(to right, #f56565, #f56565)" }} size="small">
+                  <InputLabel id="demo-select-small-label" sx={{ color: "white" }}>Idioma</InputLabel>
+                  <Select
+                    labelId="demo-select-small-label"
+                    id="demo-select-small"
+                    label="Idioma"
+                    onChange={handleChange}
+                    MenuProps={{
+                      sx:{
+                        color: "white",
+                      }
+                    }}
+                  >
+                    <MenuItem value="pt">pt-BR</MenuItem>
+                    <MenuItem value="es">es-ES</MenuItem>
+                    <MenuItem value="en">es-US</MenuItem>
+                    <MenuItem value="ja">ja</MenuItem>
+                  </Select>
+                </FormControl>
               </li>
             </ul>
           </nav>
           <section className="text-center">
             <TypeAnimation
+            key={language} 
               sequence={[
-                "Por que deveriam me contratar?",
+                t("PQEU.Tx1"),
                 1000,
-                "O que me torna diferente?",
+                t("PQEU.Tx2"),
                 1000,
-                "O que me motiva?",
+                t("PQEU.Tx3"),
                 1000,
-                "O que me faz feliz?",
+                t("PQEU.Tx4"),
                 1000,
-                () => {
-                  console.log("Teste!");
-                },
               ]}
               wrapper="h2"
               cursor={true}
@@ -85,10 +115,7 @@ export default function Home() {
               {t("Eu.Curso")}
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
-              Desenvolvedor empenhado em construir o software de melhor
-              qualidade. Tenho facilidade em aprender rapidamente novas
-              tecnologias e conceitos, o que me permite adaptar-me
-              eficientemente a diferentes ambientes de trabalho e projetos.
+              {t("Eu.Tx1")}
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -108,9 +135,9 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Sobre Mim</h3>
+            <h3 className="text-3xl py-1 dark:text-white">{t("Eu.Sobre_Mim")}</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Olá! Sou Gabriel Ferreira Amorim, tenho 20 anos e moro em{" "}
+              {t("Eu.Tx2")}{" "}
               <a
                 className="text-red-500 underline"
                 href="https://pt.wikipedia.org/wiki/S%C3%A3o_Mateus_(distrito_de_S%C3%A3o_Paulo)"
@@ -118,8 +145,7 @@ export default function Home() {
               >
                 São Mateus
               </a>
-              , na Zona Leste de São Paulo. Atualmente curso o 2º semestre de
-              Análise e Desenvolvimento de Sistemas na,{" "}
+              {t("Eu.Tx21")}{" "}
               <a
                 className="text-red-500 underline"
                 href="https://www.cps.sp.gov.br/fatecs/fatec-zona-leste/"
@@ -127,7 +153,7 @@ export default function Home() {
               >
                 Fatec Zona Leste
               </a>
-              . Minha trajetória começou com o técnico em Marketing na{" "}
+              {t("Eu.Tx22")}{" "}
               <a
                 className="text-red-500 underline"
                 href="https://www.cps.sp.gov.br/etecs/etec-de-sapopemba-sapopemba/"
@@ -135,7 +161,7 @@ export default function Home() {
               >
                 ETEC Sapopemba
               </a>
-              , depois segui para Desenvolvimento de Sistemas na{" "}
+              {t("Eu.Tx23")}{" "}
               <a
                 className="text-red-500 underline"
                 href="https://www.cps.sp.gov.br/etecs/etec-de-guaianazes-guaianazes/"
@@ -143,13 +169,13 @@ export default function Home() {
               >
               ETEC Guaianazes
               </a>{" "}
-              e me aprofundei em Fullstack Java no {" "}
+              {t("Eu.Tx25")}{" "}
               <a className="text-red-500 underline" target="_black" href="https://www.sp.senac.br/senac-lapa-tito">
               Senac Lapa Tito.
               </a>
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-            Já atuei como aprendiz no setor administrativo. Iniciei tirando dúvidas nos guichês de terminais de ônibus, mas fui gradualmente passando para a zeladoria, onde fazia controle do estoque e atendimento aos postos. Aquela experiência me ensinou bastante sobre organização, resolubilidade e tratamento com diferentes profis e pessoas.
+            {t("Eu.Tx26")}
             </p>
           </div>
           <div className="lg:flex gap-10 justify-center">
@@ -158,11 +184,10 @@ export default function Home() {
                 <Image src={code} width={100} height={100} />
               </div>
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Linguagens, Ferramentas e Frameworks
+                {t("Eu.Langs")}
               </h3>
               <p>
-                Desenvolvendo aplicações com o que há de mais recente no
-                mercado.
+                {t("Eu.Tx3")}
               </p>
               <div className="my-6 flex justify-center gap-1 text-red-500">
                 <IoLogoJavascript size={32} />
@@ -176,21 +201,17 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white">{t("Eu.Portfolio")}</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Ao longo da minha carreira, participei de{" "}
-              <span className="text-red-500">diversos projetos</span> que
-              exemplificam minhas habilidades e meu compromisso com a
-              excelência. Cada projeto é uma{" "}
+              {t("Eu.Tx4")}{" "}
+              <span className="text-red-500">{t("Eu.Tx41")}</span>{t("Eu.Tx42")}{" "}
               <span className="text-red-500">
-                oportunidade de aplicar meus conhecimentos
+                {t("Eu.Tx43")}
               </span>{" "}
-              e de aprender algo novo, sempre com o objetivo de superar as
-              expectativas dos clientes e usuários.
+              {t("Eu.Tx44")}
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Eu busco sempre aplicar o máximo de tudo que aprendi em meus
-              projetos.
+              {t("Eu.Tx45")}
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">

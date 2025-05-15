@@ -2,12 +2,15 @@ import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
 import ptBrTranslation from "./locale/pt-BR/pt-BR.json";
 import esESTranslation from "./locale/es-ES/es-ES.json";
+import engTranslation from "./locale/en-US/en-US.json";
+import jaTranslation from "./locale/ja/ja.json";
 
 i18n.use(initReactI18next).init({
     debug: true,
-    lng: 'pt-BR',
+    lng: 'pt-BR', // Idioma padrão
+    fallbackLng: 'pt-BR', // Idioma de fallback
     interpolation: {
-        escapeValue: false,
+      escapeValue: false, // React já faz a sanitização
     }, resources: {
         pt: {
             ...ptBrTranslation
@@ -15,6 +18,12 @@ i18n.use(initReactI18next).init({
         es: {
             ...esESTranslation
         },
+        en: {
+            ...engTranslation
+        },
+        ja:{
+            ...jaTranslation
+        }
         
     },  
     react: {

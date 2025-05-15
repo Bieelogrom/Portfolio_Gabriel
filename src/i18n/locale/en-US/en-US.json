@@ -1,0 +1,32 @@
+{
+    "translation": {
+      "Eu": {
+        "Curso": "Student of Systems Analysis and Development",
+        "Tx1": "Developer committed to building the highest quality software. I learn new technologies and concepts quickly, which allows me to adapt efficiently to different work environments and projects.",
+        "Sobre_Mim": "About Me",
+        "Tx2": "Hi! I'm Gabriel Ferreira Amorim, I'm 20 years old and I live in",
+        "Tx21": "in the Eastern Zone of São Paulo. I am currently in the 2nd semester of the Systems Analysis and Development program at",
+        "Tx22": ". My journey began with a technical course in Marketing at ",
+        "Tx23": ", then I moved on to Systems Development at ",
+        "Tx25": " and I specialized in Fullstack Java at ",
+        "Tx26": " I have already worked as an apprentice in the administrative sector. I started answering questions at bus terminal counters, and gradually transitioned to maintenance, where I handled inventory control and assistance to the stations. That experience taught me a lot about organization, problem-solving, and dealing with different professionals and people.",
+        "Langs": "Languages, Tools and Frameworks",
+        "Tx3": "Developing applications with the latest technologies on the market.",
+        "Portfolio": "Portfolio",
+        "Tx4": "Throughout my career, I have participated in",
+        "Tx41": " several projects",
+        "Tx42": " that showcase my skills and commitment to excellence. Each project is an",
+        "Tx43": " opportunity to apply my knowledge",
+        "Tx44": " and to learn something new, always aiming to exceed the expectations of clients and users.",
+        "Tx45": " I always strive to apply everything I have learned to the fullest in my projects."
+      },
+      "PQEU": {
+      "Tx1": "Why should I be hired?",
+      "Tx2": "What makes me different?",
+      "Tx3": "What motivates me?",
+      "Tx4": "What is my goal?"
+    }
+    }
+
+  }
+  
