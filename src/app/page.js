@@ -6,9 +6,10 @@ import { AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { IoLogoJavascript, IoLogoPython } from "react-icons/io5";
 import { DiMysql } from "react-icons/di";
 import { FaJava } from "react-icons/fa6";
+import { RiFileExcel2Fill } from "react-icons/ri";
 import eu from "../../public/Eu.png";
 import design from "../../public/design.png";
-import code from "../../public/code.png";
+import code from "../../public/Code2.png";
 import codificador from "../../public/Codificador.jpeg";
 import cinemark from "../../public/Cinemark.png";
 import mapa from "../../public/Mapa.jpeg";
@@ -41,7 +42,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-red-500 to-red-500 text-white px-4 py-2 rounded-md ml-8"
                   href="/Dev.pdf"
                   download
                 >
@@ -70,12 +71,12 @@ export default function Home() {
               repeat={Infinity}
               className={"text-2xl dark:text-white"}
             ></TypeAnimation>
-            <div className="flex justify-center p-3">
-            <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div className="flex justify-center p-3 rounded-md object-cover ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3c6t_VzAfec?si=ynk9KsduwPxEh9yO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </section>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-300">
+            <h2 className="text-5xl py-2 text-red-600 font-medium md:text-6xl dark:text-red-500">
               Gabriel Ferreira Amorim
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
@@ -99,7 +100,7 @@ export default function Home() {
               <AiFillGithub className="dark:text-white" />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b from-red-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={eu} layout="fill" objectFit="cover" />
           </div>
         </section>
@@ -109,7 +110,7 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Olá! Sou Gabriel Ferreira Amorim, tenho 20 anos e moro em{" "}
               <a
-                className="text-teal-500 underline"
+                className="text-red-500 underline"
                 href="https://pt.wikipedia.org/wiki/S%C3%A3o_Mateus_(distrito_de_S%C3%A3o_Paulo)"
                 target="_black"
               >
@@ -118,7 +119,7 @@ export default function Home() {
               , na Zona Leste de São Paulo. Atualmente curso o 2º semestre de
               Análise e Desenvolvimento de Sistemas na,{" "}
               <a
-                className="text-teal-500 underline"
+                className="text-red-500 underline"
                 href="https://www.cps.sp.gov.br/fatecs/fatec-zona-leste/"
                 target="_black"
               >
@@ -126,7 +127,7 @@ export default function Home() {
               </a>
               . Minha trajetória começou com o técnico em Marketing na{" "}
               <a
-                className="text-teal-500 underline"
+                className="text-red-500 underline"
                 href="https://www.cps.sp.gov.br/etecs/etec-de-sapopemba-sapopemba/"
                 target="_black"
               >
@@ -134,14 +135,14 @@ export default function Home() {
               </a>
               , depois segui para Desenvolvimento de Sistemas na{" "}
               <a
-                className="text-teal-500 underline"
+                className="text-red-500 underline"
                 href="https://www.cps.sp.gov.br/etecs/etec-de-guaianazes-guaianazes/"
                 target="_black"
               >
               ETEC Guaianazes
               </a>{" "}
               e me aprofundei em Fullstack Java no {" "}
-              <a className="text-teal-500 underline" target="_black" href="https://www.sp.senac.br/senac-lapa-tito">
+              <a className="text-red-500 underline" target="_black" href="https://www.sp.senac.br/senac-lapa-tito">
               Senac Lapa Tito.
               </a>
             </p>
@@ -161,11 +162,12 @@ export default function Home() {
                 Desenvolvendo aplicações com o que há de mais recente no
                 mercado.
               </p>
-              <div className="my-6 flex justify-center gap-1 text-teal-500">
+              <div className="my-6 flex justify-center gap-1 text-red-500">
                 <IoLogoJavascript size={32} />
                 <FaJava size={32} />
                 <IoLogoPython size={32} />
                 <DiMysql size={32} />
+                <RiFileExcel2Fill size={32} />
               </div>
             </div>
           </div>
@@ -175,10 +177,10 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Ao longo da minha carreira, participei de{" "}
-              <span className="text-teal-500">diversos projetos</span> que
+              <span className="text-red-500">diversos projetos</span> que
               exemplificam minhas habilidades e meu compromisso com a
               excelência. Cada projeto é uma{" "}
-              <span className="text-teal-500">
+              <span className="text-red-500">
                 oportunidade de aplicar meus conhecimentos
               </span>{" "}
               e de aprender algo novo, sempre com o objetivo de superar as
